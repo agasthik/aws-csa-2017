@@ -3,9 +3,7 @@
     <td>
 AWS CSA 2017
 Study Guide</td>
-    <td>ABSTRACT
-Study notes taken during the certification course preparation – April 2017
-Agasthi Kothurkar
+    <td>Study notes taken during the AWS CSA certification course preparation – April 2017
      </td>
   </tr>
 </table>
