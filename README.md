@@ -1,11 +1,13 @@
 
 ![AWS- CSA Associate Logo](aws-csa-associate.png)
 # AWS CSA 2017 Study Guide
-### Study notes taken during the AWS CSA Re-certification course preparation
-### April 2017
 
-#### To view latest updated contents click [here](https://agasthik.github.io/aws-csa-2017/)
-#### For any omissions and corrections please open a PR against this [Github Repo](https://github.com/agasthik/aws-csa-2017/)
+
+#### The study guide contains notes taken while studying through the awesome ACloud.guru course. Ryan's content and his narrative style rocks!! The course content copyrights are owned by [ACloud Guru Ltd.](https://acloud.guru)
+#### The purpose of this guide is to share my notes with other fellow certification aspirants for purpose of self-study and quick revision.
+
+##### To view latest updated contents click [here](https://agasthik.github.io/aws-csa-2017/)
+For any omissions and corrections please open a PR against this [Github Repo](https://github.com/agasthik/aws-csa-2017/)
 
 
 ## Exam Blueprint
