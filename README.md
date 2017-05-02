@@ -1,17 +1,14 @@
-<table>
 
-    |
-AWS CSA 2017
-Study Guide|
-    |Study notes taken during the AWS CSA certification course preparation – April 2017
-     |
+![AWS- CSA Associate Logo](aws-csa-associate.png)
+# AWS CSA 2017 Study Guide
+### Study notes taken during the AWS CSA Re-certification course preparation
+### April 2017
 
-</table>
+#### To view latest updated contents click [here](https://agasthik.github.io/aws-csa-2017/)
+#### For any omissions and corrections please open a PR against this [Github Repo](https://github.com/agasthik/aws-csa-2017/)
 
 
-# Introduction to Course
-
-## Blueprint
+## Exam Blueprint
 
 Review Exam [Blueprint](http://awstrainingandcertification.s3.amazonaws.com/production/AWS_certified_solutions_architect_associate_blueprint.pdf) –
 
@@ -1256,7 +1253,7 @@ Typical Private IP address ranges – not publically routable.
 
   - 192.168.0.0 - 192.168.255.255 (192.168/16 prefix)
 
-VPC Diagram ![image alt text](image_0.png)
+VPC Diagram ![VPC with Public and Private subnets](image_0.png)
 
 ## Default v/s Custom VPC
 
@@ -2773,6 +2770,11 @@ You can use Route 53 health checks to check for the presence of a designated str
   - [https://acloud.guru/forums/aws-certified-developer-associate/discussion/-KBkBPMHpN2ITSH1oDTO/passed-with-90-my-exam-tips](https://acloud.guru/forums/aws-certified-developer-associate/discussion/-KBkBPMHpN2ITSH1oDTO/passed-with-90-my-exam-tips)
 
   - [http://stackoverflow.com/questions/24728634/aws-elasticache-vs-rds-readreplica](http://stackoverflow.com/questions/24728634/aws-elasticache-vs-rds-readreplica)
+
+  <a href="http://www.youtube.com/watch?feature=player_embedded&v=vg5onp8TU6Q" target="_blank">Scaling up to your first 10 million users<img src="http://img.youtube.com/vi/vg5onp8TU6Q/0.jpg"
+  alt="Scaling up to your first 10 million users" width="240" height="180" border="10" /></a>
+
+
 
 # Technical Concepts
 
