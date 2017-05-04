@@ -1255,7 +1255,9 @@ Typical Private IP address ranges – not publically routable.
 
   - 192.168.0.0 - 192.168.255.255 (192.168/16 prefix)
 
-VPC Diagram ![VPC with Public and Private subnets](image_0.png)
+VPC Diagram - Public and Private subnets ![VPC with Public and Private subnets](VPC-Diagram.jpg)
+
+To use AWS Stencils download them at the [AWS Simple Icons for Architecture Diagrams](https://aws.amazon.com/architecture/icons/) site
 
 ## Default v/s Custom VPC
 
@@ -2717,61 +2719,65 @@ You can use Route 53 health checks to check for the presence of a designated str
 
 # Review These Links
 
-  - [http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-creating-snapshot.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-creating-snapshot.html)
+  -[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-creating-snapshot.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-creating-snapshot.html)
 
-  - [https://aws.amazon.com/premiumsupport/knowledge-center/snapshot-ebs-raid-array/](https://aws.amazon.com/premiumsupport/knowledge-center/snapshot-ebs-raid-array/)
+  -[https://aws.amazon.com/premiumsupport/knowledge-center/snapshot-ebs-raid-array/](https://aws.amazon.com/premiumsupport/knowledge-center/snapshot-ebs-raid-array/)
 
-  - [http://docs.aws.amazon.com/AmazonS3/latest/dev/Introduction.html#ConsistencyModel](http://docs.aws.amazon.com/AmazonS3/latest/dev/Introduction.html#ConsistencyModel)
+  -[http://docs.aws.amazon.com/AmazonS3/latest/dev/Introduction.html#ConsistencyModel](http://docs.aws.amazon.com/AmazonS3/latest/dev/Introduction.html#ConsistencyModel)
 
-  - [http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html)
+  -[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html)
 
-  - [http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html)
+  -[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html)
 
-  - [http://s3-accelerate-speedtest.s3-accelerate.amazonaws.com](http://s3-accelerate-speedtest.s3-accelerate.amazonaws.com)  
+  -[http://s3-accelerate-speedtest.s3-accelerate.amazonaws.com](http://s3-accelerate-speedtest.s3-accelerate.amazonaws.com)  
 
-  - [http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-vpc.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-vpc.html)
+  -[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-vpc.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-vpc.html)
 
-  - [http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/virtualization_types.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/virtualization_types.html)
+  -[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/virtualization_types.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/virtualization_types.html)
 
-  - [http://docs.aws.amazon.com/autoscaling/latest/userguide/as-instance-termination.html](http://docs.aws.amazon.com/autoscaling/latest/userguide/as-instance-termination.html)
+  -[http://docs.aws.amazon.com/autoscaling/latest/userguide/as-instance-termination.html](http://docs.aws.amazon.com/autoscaling/latest/userguide/as-instance-termination.html)
 
-  - [http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/t2-instances.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/t2-instances.html)
+  -[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/t2-instances.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/t2-instances.html)
 
-  - [http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html)
+  -[http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html)
 
-  - [https://aws.amazon.com/premiumsupport/trustedadvisor/](https://aws.amazon.com/premiumsupport/trustedadvisor/)
+  -[https://aws.amazon.com/premiumsupport/trustedadvisor/](https://aws.amazon.com/premiumsupport/trustedadvisor/)
 
-  - [http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-choosing-alias-non-alias.html](http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-choosing-alias-non-alias.html)
+  -[http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-choosing-alias-non-alias.html](http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-choosing-alias-non-alias.html)
 
-  - [http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstancesConnecting.html#TroubleshootingInstancesConnectionTimeout](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstancesConnecting.html#TroubleshootingInstancesConnectionTimeout)
+  -[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstancesConnecting.html#TroubleshootingInstancesConnectionTimeout](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstancesConnecting.html#TroubleshootingInstancesConnectionTimeout)
 
-  - [https://aws.amazon.com/rds/details/multi-az/](https://aws.amazon.com/rds/details/multi-az/)
+  -[https://aws.amazon.com/rds/details/multi-az/](https://aws.amazon.com/rds/details/multi-az/)
 
-  - [http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Subnets.html](http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Subnets.html)
+  -[http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Subnets.html](http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Subnets.html)
 
-  - [http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-nat-comparison.html](http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-nat-comparison.html)
+  -[http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-nat-comparison.html](http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-nat-comparison.html)
 
-  - [http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Security.html](http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Security.html)
+  -[http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Security.html](http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Security.html)
 
-  - [http://cloudacademy.com/blog/aws-ami-hvm-vs-pv-paravirtual-amazon/](http://cloudacademy.com/blog/aws-ami-hvm-vs-pv-paravirtual-amazon/)
+  -[http://cloudacademy.com/blog/aws-ami-hvm-vs-pv-paravirtual-amazon/](http://cloudacademy.com/blog/aws-ami-hvm-vs-pv-paravirtual-amazon/)
 
-  - [http://cloudacademy.com/blog/consistency-models-of-amazon-cloud-services/](http://cloudacademy.com/blog/consistency-models-of-amazon-cloud-services/)
+  -[http://cloudacademy.com/blog/consistency-models-of-amazon-cloud-services/](http://cloudacademy.com/blog/consistency-models-of-amazon-cloud-services/)
 
-  - [http://cloudacademy.com/blog/aws-bastion-host-nat-instances-vpc-peering-security/](http://cloudacademy.com/blog/aws-bastion-host-nat-instances-vpc-peering-security/)
+  -[http://cloudacademy.com/blog/aws-bastion-host-nat-instances-vpc-peering-security/](http://cloudacademy.com/blog/aws-bastion-host-nat-instances-vpc-peering-security/)
 
-  - [http://jayendrapatil.com/aws-storage-gateway/](http://jayendrapatil.com/aws-storage-gateway/)
+  -[http://jayendrapatil.com/aws-storage-gateway/](http://jayendrapatil.com/aws-storage-gateway/)
 
-  - [http://jayendrapatil.com/tag/cheat-sheet/](http://jayendrapatil.com/tag/cheat-sheet/)
+  -[http://jayendrapatil.com/tag/cheat-sheet/](http://jayendrapatil.com/tag/cheat-sheet/)
 
-  - [http://jayendrapatil.com/aws-global-vs-regional-vs-az-resources/](http://jayendrapatil.com/aws-global-vs-regional-vs-az-resources/)
+  -[http://jayendrapatil.com/aws-global-vs-regional-vs-az-resources/](http://jayendrapatil.com/aws-global-vs-regional-vs-az-resources/)
 
-  - [https://acloud.guru/forums/aws-certified-solutions-architect-associate/discussion/-KSDNs4nfg5ikp6yBN9l/exam_feedback_-_20_specific_po](https://acloud.guru/forums/aws-certified-solutions-architect-associate/discussion/-KSDNs4nfg5ikp6yBN9l/exam_feedback_-_20_specific_po)
+  -[Study Notes From Chris Williams](http://mistwire.com/2016/05/aws-certified-solutions-architect-associate-study-notes/)
 
-  - [https://acloud.guru/forums/aws-certified-solutions-architect-associate/discussion/-KKr5HCv2bzH3EOBSUAt/my_path_to_solutions_architect](https://acloud.guru/forums/aws-certified-solutions-architect-associate/discussion/-KKr5HCv2bzH3EOBSUAt/my_path_to_solutions_architect)
+  -[Study Notes From clusterfrak](http://clusterfrak.com/notes/certs/aws_saa_notes/)
 
-  - [https://acloud.guru/forums/aws-certified-developer-associate/discussion/-KBkBPMHpN2ITSH1oDTO/passed-with-90-my-exam-tips](https://acloud.guru/forums/aws-certified-developer-associate/discussion/-KBkBPMHpN2ITSH1oDTO/passed-with-90-my-exam-tips)
+  -[https://acloud.guru/forums/aws-certified-solutions-architect-associate/discussion/-KSDNs4nfg5ikp6yBN9l/exam_feedback_-_20_specific_po](https://acloud.guru/forums/aws-certified-solutions-architect-associate/discussion/-KSDNs4nfg5ikp6yBN9l/exam_feedback_-_20_specific_po)
 
-  - [http://stackoverflow.com/questions/24728634/aws-elasticache-vs-rds-readreplica](http://stackoverflow.com/questions/24728634/aws-elasticache-vs-rds-readreplica)
+  -[https://acloud.guru/forums/aws-certified-solutions-architect-associate/discussion/-KKr5HCv2bzH3EOBSUAt/my_path_to_solutions_architect](https://acloud.guru/forums/aws-certified-solutions-architect-associate/discussion/-KKr5HCv2bzH3EOBSUAt/my_path_to_solutions_architect)
+
+  -[https://acloud.guru/forums/aws-certified-developer-associate/discussion/-KBkBPMHpN2ITSH1oDTO/passed-with-90-my-exam-tips](https://acloud.guru/forums/aws-certified-developer-associate/discussion/-KBkBPMHpN2ITSH1oDTO/passed-with-90-my-exam-tips)
+
+  -[http://stackoverflow.com/questions/24728634/aws-elasticache-vs-rds-readreplica](http://stackoverflow.com/questions/24728634/aws-elasticache-vs-rds-readreplica)
 
   <a href="http://www.youtube.com/watch?feature=player_embedded&v=vg5onp8TU6Q" target="_blank">Scaling up to your first 10 million users<img src="http://img.youtube.com/vi/vg5onp8TU6Q/0.jpg"
   alt="Scaling up to your first 10 million users" width="240" height="180" border="10" /></a>
