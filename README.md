@@ -323,7 +323,7 @@ Using Access Key ID and Secret Access Key – can be used only via accessing pro
 
   - Prefix in bucket is a folder in the bucket.
 
-  - Minimum file size that I can store on S3 bucket is 1 byte.
+  - Minimum file size that I can store on S3 bucket is 0 byte.
 
   - 100 S3 buckets per account by default.
 
