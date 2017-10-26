@@ -299,7 +299,7 @@ Using Access Key ID and Secret Access Key – can be used only via accessing pro
 
   - S3-Standard - Durability of 99.999999999% and availability of 99.99%.
 
-  - S3-Infrequently Accesses - Durability of 99.999999999% and availability of 99.99%.
+  - S3-Infrequently Accesses - Durability of 99.999999999% and availability of 99.9%.
 
   - S3-RRC - Durability and availability of 99.99%. Use when you don’t care if data is occasionally lost and can easily be re-created.
 
