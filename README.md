@@ -1303,12 +1303,12 @@ To use AWS Stencils download them at the [AWS Simple Icons for Architecture Diag
 
 ## Network ACLs & Security Groups
 |Security Group| Network ACL|
-    | ------------- |-------------| 
-    |Operates at the instance level (first layer of defense)| Operates at the subnet level (second layer of defense)|
-    |Supports allow rules only| Supports allow rules and deny rules|
-    |Is stateful: Return traffic is automatically allowed, regardless of any rules| Is stateless: Return traffic must be explicitly allowed by rules|
-    |We evaluate all rules before deciding whether to allow traffic| We process rules in number order when deciding whether to allow traffic. Lower order rules take effect in case of conflict with higher order rules.|
-    |Applies to an instance only if someone specifies the security group when launching the instance, or associates the security group with the instance later on| Automatically applies to all instances in the subnets it's associated with (backup layer of defense, so you don't have to rely on someone specifying the security group)|
+|-------------|-------------| 
+|Operates at the instance level (first layer of defense)| Operates at the subnet level (second layer of defense)|
+|Supports allow rules only| Supports allow rules and deny rules|
+|Is stateful: Return traffic is automatically allowed, regardless of any rules| Is stateless: Return traffic must be explicitly allowed by rules|
+|We evaluate all rules before deciding whether to allow traffic| We process rules in number order when deciding whether to allow traffic. Lower order rules take effect in case of conflict with higher order rules.|
+|Applies to an instance only if someone specifies the security group when launching the instance, or associates the security group with the instance later on| Automatically applies to all instances in the subnets it's associated with (backup layer of defense, so you don't have to rely on someone specifying the security group)|
 
 
   - With default ACL, all inbound and outbound traffic is allowed automatically
@@ -2185,17 +2185,15 @@ DB Snapshots are user-initiated and enable you to back up your DB instance in a 
 
   - A database parameter group (DB Parameter Group) acts as a "container" for engine configuration values that can be applied to one or more DB Instances. 
 
-    |If You Need|
-    |Consider Using|
-    |Product Type|
-    |---|----|----|
-    |A managed relational database in the cloud that you can launch in minutes with a just a few clicks.| Amazon RDS| Relational Database|
-    |A fully managed MySQL compatible relational database with 5X performance and enterprise level features.| Amazon Aurora | Relational Database|
-    |A managed NoSQL database that offers extremely fast performance, seamless scalability and reliability| Amazon DynamoDB| NoSQL Database|
-    |A fast, fully managed, petabyte-scale data warehouse at less than a tenth the cost of traditional solutions.|Amazon Redshift| Data Warehouse|
-    |To deploy, operate, and scale in-memory cache based on Memcached or Redis in the cloud.| Amazon ElastiCache| In-Memory Cache|
-    |Help migrating your databases to AWS easily and inexpensively with zero downtime.| AWS Database Migration Service| Database Migration |
-    |To build flexible cloud-native directories for organizing hierarchies of data along multiple dimensions |Amazon Cloud Directory | Directory|
+|If You Need|Consider Using|Product Type|
+|---|----|----|
+|A managed relational database in the cloud that you can launch in minutes with a just a few clicks.| Amazon RDS| Relational Database|
+|A fully managed MySQL compatible relational database with 5X performance and enterprise level features.| Amazon Aurora | Relational Database|
+|A managed NoSQL database that offers extremely fast performance, seamless scalability and reliability| Amazon DynamoDB| NoSQL Database|
+|A fast, fully managed, petabyte-scale data warehouse at less than a tenth the cost of traditional solutions.|Amazon Redshift| Data Warehouse|
+|To deploy, operate, and scale in-memory cache based on Memcached or Redis in the cloud.| Amazon ElastiCache| In-Memory Cache|
+|Help migrating your databases to AWS easily and inexpensively with zero downtime.| AWS Database Migration Service| Database Migration|
+|To build flexible cloud-native directories for organizing hierarchies of data along multiple dimensions |Amazon Cloud Directory | Directory|
 
 
 ## EC2
