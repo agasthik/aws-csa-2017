@@ -3,10 +3,11 @@
 # AWS CSA 2017 Study Guide
 
 
-#### The study guide contains notes taken while studying through the awesome ACloud.guru course. Ryan's content and his narrative style rocks!! The course content copyrights are owned by [ACloud Guru Ltd.](https://acloud.guru)
+### The study guide contains notes taken while studying through the awesome ACloud.guru course. Ryan's content and his narrative style rocks!! The course content copyrights are owned by [ACloud Guru Ltd.](https://acloud.guru)
 #### The purpose of this guide is to share my notes with other fellow certification aspirants for purpose of self-study and quick revision.
 
-##### To view latest updated contents click [here](https://agasthik.github.io/aws-csa-2017/)
+#### You can also read this on [Gitbooks](https://agasthik.gitbooks.io/aws-csa/content/) and download the guide in PDF format [here(https://www.gitbook.com/download/pdf/book/agasthik/aws-csa)
+
 For any omissions and corrections please open a PR against this [Github Repo](https://github.com/agasthik/aws-csa-2017/)
 
 
@@ -1395,12 +1396,12 @@ Exam Tip - De-couple ➔ SQS
 
 Trick Question – when to use SQS or SWS
 
-    |Attribute|SQS|SWS|
-    |----|----|----|
-    |Retention |14 days|1 year|
-    |API|Message Oriented|Task Oriented|
-    |Assignment|Might be assigned multiple times|Only once|
-    |State|Write code to implement tracking|Keeps Track of State & Events|
+|Attribute|SQS|SWS|
+|----|----|----|
+|Retention |14 days|1 year|
+|API|Message Oriented|Task Oriented|
+|Assignment|Might be assigned multiple times|Only once|
+|State|Write code to implement tracking|Keeps Track of State & Events|
 
 SWS Actors
 
@@ -1468,15 +1469,15 @@ EC2 instances pull SQS messages from a standard SQS queue on a FIFO (First In Fi
         - Data consumers (EC2 instances) analyze the stream and then derive results/take next actions.
         - Data capacity of stream is a function of the number of shards you specify for the stream.
 
-  - Kinesis Firehose –
+  - Kinesis Firehose 
 
-        - Don’t have to worry about shards, streams – completely automated.
-        - No automatic data retention window. Data is either immediately analyzed or sent to S3 and then to Redshift, elastic search cluster
-        - Data is immediately analyzed via **Lambda**.
+      - Don’t have to worry about shards, streams – completely automated.
+      - No automatic data retention window. Data is either immediately analyzed or sent to S3 and then to Redshift, elastic search cluster
+      - Data is immediately analyzed via **Lambda**.
 
   - Kinesis Analytics –
 
-        - Run SQL type queries on top of data contained in Streams or Firehose and store the results in S3 / Redshift and Elastic Search cluster.
+      - Run SQL type queries on top of data contained in Streams or Firehose and store the results in S3 / Redshift and Elastic Search cluster.
 
 # The Real World – Creating a Fault Tolerant Word Press Site
 > This section needs additional information
@@ -1681,44 +1682,31 @@ Each Pillar has Design Principles, Definition, Best Practices, Key AWS Services 
 
 ### Security Areas
 
-        1. Data protection
-
-        2. Privilege management
-
-        3. Infrastructure protection
-
-        4. Detective controls
+  1. Data protection
+  2. Privilege management
+  3. Infrastructure protection
+  4. Detective controls
 
 ### Best Practices
 
 1. Data protection
 
-      - Basic data classification should be in place. Organize data into segments. Who should have access to data? Implement least privilege principle
-
-      - Encrypt everything where possible – both rest and transit
-
-1. AWS customers maintain full control of their data
-
-2. AWS makes it easier for you to encrypt your data and manage keys – KMS or by a customer
-
-3. Detailed logging available.
-
-4. AWS systems are exceptionally resilient.
-
-5. Versioning can be used as data lifecycle management.
-
-6. AWS never initiates movement of data between regions unless a feature is enabled or leverages a services
+  - Basic data classification should be in place. Organize data into segments. Who should have access to data? Implement least privilege principle
+  - Encrypt everything where possible – both at rest and in transit
+  - AWS customers maintain full control of their data
+  - AWS makes it easier for you to encrypt your data and manage keys – KMS or by a customer
+  - Detailed logging available.
+  - AWS systems are exceptionally resilient.
+  - Versioning can be used as data lifecycle management.
+  - AWS never initiates movement of data between regions unless a feature is enabled or leverages a services
 
 How are you encrypting data at rest and transit (SSL)? – ELB, EBS, S3, RDS
 
 2. Privilege management
 
-Allow only authorized and authenticated users are able to access resources. This is achieved via
-
+  - Allow only authorized and authenticated users are able to access resources. This is achieved via
   - ACLs,
-
   - RBAC – Role based access control
-
   - Password Management
 
 How are you protecting access to and use of AWS root account credentials?
@@ -1759,7 +1747,7 @@ AWS Services which can help
 
 How are you capturing and analyzing your AWS logs. CloudTrail is a regional service. Which 3rd party tools you are using for this analysis.
 
-        2. Reliability / Fault Tolerance
+  2. Reliability / Fault Tolerance
 
   - Ability of system to recover from service or infrastructure outages/disruptions
 
@@ -1827,7 +1815,8 @@ How are you planning for recovery?
 
   - Failure Management - CloudFormation
 
-        3. Performance Efficiency
+
+3. Performance Efficiency
 
 Focuses on how to use computing requirements efficiently to meet business needs. How to manage efficiency as demand changes and technology evolves. Constantly question current architecture vis-a-vi current available services
 
@@ -1917,15 +1906,12 @@ How do you ensure proximity and caching capacity matches demand?
 
 ### Key AWS Resources
 
-      - Compute – Auto scaling
+  - Compute – Auto scaling
+  - Storage – EBS, S3, Glacier
+  - Database – RDS, DynamoDB , Redshift
+  - Space-time trade off – CloudFront, ElastiCache, Direct Connect, RDS Read Replicas, etc. – anything that will lower latency or time to access service.
 
-      - Storage – EBS, S3, Glacier
-
-      - Database – RDS, DynamoDB , Redshift
-
-      - Space-time trade off – CloudFront, ElastiCache, Direct Connect, RDS Read Replicas, etc. – anything that will lower latency or time to access service.
-
-        4. Cost Optimization
+  4. Cost Optimization
 
 Use cost to minimum and use the savings in other parts of business.
 
@@ -2705,8 +2691,8 @@ You can use Route 53 health checks to check for the presence of a designated str
 
   -[http://stackoverflow.com/questions/24728634/aws-elasticache-vs-rds-readreplica](http://stackoverflow.com/questions/24728634/aws-elasticache-vs-rds-readreplica)
 
-  <a href="http://www.youtube.com/watch?feature=player_embedded&v=vg5onp8TU6Q" target="_blank">Scaling up to your first 10 million users<img src="http://img.youtube.com/vi/vg5onp8TU6Q/0.jpg"
-  alt="Scaling up to your first 10 million users" width="240" height="180" border="10" /></a>
+  -Scaling Up to Your First 10 Million Users
+  [![Scaling up to your first 10 million users](http://img.youtube.com/vi/vg5onp8TU6Q/0.jpg)](https://www.youtube.com/watch?v=vg5onp8TU6Q)
 
 
 
