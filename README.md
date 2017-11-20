@@ -6,7 +6,7 @@
 ### The study guide contains notes taken while studying through the awesome ACloud.guru course. Ryan's content and his narrative style rocks!! The course content copyrights are owned by [ACloud Guru Ltd.](https://acloud.guru)
 #### The purpose of this guide is to share my notes with other fellow certification aspirants for purpose of self-study and quick revision.
 
-#### You can also read this on [Gitbooks](https://agasthik.gitbooks.io/aws-csa/content/) and download the guide in PDF format [here(https://www.gitbook.com/download/pdf/book/agasthik/aws-csa)
+#### You can also read this on [Gitbooks](https://agasthik.gitbooks.io/aws-csa/content/) and download the guide in PDF format [here](https://www.gitbook.com/download/pdf/book/agasthik/aws-csa)
 
 For any omissions and corrections please open a PR against this [Github Repo](https://github.com/agasthik/aws-csa-2017/)
 
