@@ -334,7 +334,7 @@ Using Access Key ID and Secret Access Key – can be used only via accessing pro
 
 ### S3 Versioning
 
-  - Once versioning is turned on it cannot be removed. It can only be disabled. To remove versioning, you have to create a new bucket and transfer all files from old to new
+  - Once versioning is turned on it cannot be removed. It can only be suspended. To remove versioning, you have to create a new bucket and transfer all files from old to new
 
   - For newer version of an object, you still have to set permissions to allow access. It is disabled by default even if previous version is public.
 
