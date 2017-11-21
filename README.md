@@ -316,7 +316,7 @@ Using Access Key ID and Secret Access Key – can be used only via accessing pro
 
   - Only Static website can be hosted. Auto scaling, Load Balancing etc. all managed automatically.
 
-  - You can tag buckets to track costs
+  - You can tag buckets (or any AWS resoruce) to track costs. Tags consist of keys and (optional) value pairs.
 
   - Lifecycle management of objects can be set. e.g. move to Glacier after 30 days
 
