@@ -328,7 +328,7 @@ Using Access Key ID and Secret Access Key – can be used only via accessing pro
 
   - Minimum file size that I can store on S3 bucket is 0 byte.
 
-  - 100 S3 buckets per account by default.
+  - Max 100 S3 buckets per account by default.
 
   - Individual Amazon S3 objects can range in size from a minimum of **0 bytes** to a maximum of **5 terabytes**. The largest object that can be uploaded in a single PUT is **5 gigabytes**. For objects larger than **100 megabytes**, customers should consider using the Multipart Upload capability.
 
