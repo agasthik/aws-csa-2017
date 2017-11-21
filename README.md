@@ -388,9 +388,7 @@ Using Access Key ID and Secret Access Key – can be used only via accessing pro
 
   - RTMP – Used for Media Streaming. Adobe Flash media server’s protocol – video streaming.
 
-  - Request’s response is slow for first user. Subsequent users notice improved performance.
-
-  - Request for content is routed to nearest edge location
+  - First request is slow as it comes from source origin. Subsequent requests improve speed as they are cached in nearest edge location and routed there until TTL expires.
 
   - CloudFront also works with non AWS origin which can be on premise as well. .
 
