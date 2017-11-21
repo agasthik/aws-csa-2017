@@ -300,9 +300,11 @@ Using Access Key ID and Secret Access Key – can be used only via accessing pro
 
   - S3-Standard - Durability of 99.999999999% and availability of 99.99%.
 
-  - S3-Infrequently Accesses - Durability of 99.999999999% and availability of 99.9%.
+  - S3-IA (Infrequently Accessed) - Durability of 99.999999999% and availability of 99.9%.
 
-  - S3-RRC - Durability and availability of 99.99%. Use when you don’t care if data is occasionally lost and can easily be re-created.
+  - S3-RRS (Reduced Redundancy Storage) - Durability and availability of 99.99%. Use when you don’t care if data is occasionally lost and can easily be re-created.
+  
+  - Glacier - For archival only. Takes 3 - 5 hours to restore files. Durability of 99.999999999%.
 
 ### S3 Buckets
 
@@ -314,7 +316,7 @@ Using Access Key ID and Secret Access Key – can be used only via accessing pro
 
   - Only Static website can be hosted. Auto scaling, Load Balancing etc. all managed automatically.
 
-  - You can tag buckets to track costs
+  - You can tag buckets (or any AWS resoruce) to track costs. Tags consist of keys and (optional) value pairs.
 
   - Lifecycle management of objects can be set. e.g. move to Glacier after 30 days
 
@@ -326,13 +328,13 @@ Using Access Key ID and Secret Access Key – can be used only via accessing pro
 
   - Minimum file size that I can store on S3 bucket is 0 byte.
 
-  - 100 S3 buckets per account by default.
+  - Max 100 S3 buckets per account by default.
 
   - Individual Amazon S3 objects can range in size from a minimum of **0 bytes** to a maximum of **5 terabytes**. The largest object that can be uploaded in a single PUT is **5 gigabytes**. For objects larger than **100 megabytes**, customers should consider using the Multipart Upload capability.
 
 ### S3 Versioning
 
-  - Once versioning is turned on it cannot be removed. It can only be disabled. To remove versioning, you have to create a new bucket and transfer all files from old to new
+  - Once versioning is turned on it cannot be removed. It can only be suspended. To remove versioning, you have to create a new bucket and transfer all files from old to new
 
   - For newer version of an object, you still have to set permissions to allow access. It is disabled by default even if previous version is public.
 
@@ -386,9 +388,7 @@ Using Access Key ID and Secret Access Key – can be used only via accessing pro
 
   - RTMP – Used for Media Streaming. Adobe Flash media server’s protocol – video streaming.
 
-  - Request’s response is slow for first user. Subsequent users notice improved performance.
-
-  - Request for content is routed to nearest edge location
+  - First request is slow as it comes from source origin. Subsequent requests improve speed as they are cached in nearest edge location and routed there until TTL expires.
 
   - CloudFront also works with non AWS origin which can be on premise as well. .
 
@@ -491,8 +491,7 @@ Next version of Import / Export Gateway
 
 You could accelerate moving large amounts of data into and out of AWS using portable storage devices for transport. Ship the storage device – no need to transfer over the internet.  Problem arose with different types of disks
 
-  - Snowball Standard
-
+### Snowball Standard
   - Bigger than briefcase sized storage devices
   - Petabyte scale data transport solution used to transfer data in/out of AWS
   - Cost is 1/5th as compared to transfer via high speed internet.
@@ -501,8 +500,7 @@ You could accelerate moving large amounts of data into and out of AWS using port
   - Once data is transferred, AWS performs software erasure of Snowball appliance.
 
 
-  - Snowball Edge
-
+### Snowball Edge
   - 100 TB data transfer device which has onboard storage and compute capabilities.
   - Move large amounts of data in and out of AWS, as a temporary storage tier for large local datasets.
   - You can run Lambda functions.
@@ -510,13 +508,12 @@ You could accelerate moving large amounts of data into and out of AWS using port
   - Snowball Edges can be clustered together to process your data on premise
 
 
-  - Snowmobile
-
+### Snowmobile
   - Massive 45 foot long ruggedized shipping container, pulled by a truck.
   - Petabyte or Exabyte of data that has to be transferred to AWS. 100 PB per snowmobile.
   - You can use it for data center migration.
 
-Using snowball – import / Export S3. If using Glacier first need to import into S3 and then into snowball.
+Using snowball – Import / Export S3. If using Glacier first need to import into S3 and then into Snowball.
 
 ## S3 Transfer Acceleration
 
