@@ -2,13 +2,15 @@
 ![AWS- CSA Associate Logo](aws-csa-associate.png)
 # AWS CSA 2017 Study Guide
 
-
-### The study guide contains notes taken while studying through the awesome ACloud.guru course. Ryan's content and his narrative style rocks!! The course content copyrights are owned by [ACloud Guru Ltd.](https://acloud.guru)
-#### The purpose of this guide is to share my notes with other fellow certification aspirants for purpose of self-study and quick revision.
+#### The purpose of this guide is to share my notes taken while studying for the AWS CSA re-certification exam. I use the awesome ACloud.guru course & other material listed below which I feel will help certification aspirants for purpose of self-study and quick revision. The course content copyrights are owned by [ACloud Guru Ltd.](https://acloud.guru)
 
 #### You can also read this on [Gitbooks](https://agasthik.gitbooks.io/aws-csa/content/) and download the guide in PDF format [here](https://www.gitbook.com/download/pdf/book/agasthik/aws-csa)
 
-For any omissions and corrections please open a PR against this [Github Repo](https://github.com/agasthik/aws-csa-2017/)
+################# IMPORTANT #################
+
+## I prepared these notes while studying for my re-certification exam in May 2017. I haven’t kept this updated as much as I would have liked to. If you notice any changes in the AWS policies / services, please add a comment below and I’ll update this. Also, for any omissions and corrections feel free to kindly open a PR on this [Github Repo](https://github.com/agasthik/aws-csa-2017/)
+
+#############################################
 
 Table of Contents                                                                                                                       
 =================                                                           
@@ -119,8 +121,23 @@ Table of Contents
       * [Storage Options in the Cloud](#storage-options-in-the-cloud)                                                                   
       * [Architecting for AWS Cloud - Best Practices](#architecting-for-aws-cloud---best-practices)                                     
       * [Exam Practicalities](#exam-practicalities)                                                                                     
-   * [Well Architected Framework](#well-architected-framework)                                                                               * [Design Principles](#design-principles)                                                                                               * [Security Areas](#security-areas)                                                                                                     * [Best Practices](#best-practices)                                                                                                     * [Design Principles](#design-principles-1)                                                                                             * [Areas of Reliability](#areas-of-reliability)                                                                                         * [Best Practices](#best-practices-1)                                                                                                   * [Key AWS Resources](#key-aws-resources)                                                                                               * [Design Principles](#design-principles-2)                                                                                             * [Areas of Performance Efficiency](#areas-of-performance-efficiency)                                                                   * [Best Practices](#best-practices-2)                                                                                                   * [Key AWS Resources](#key-aws-resources-1)                                                                                             * [Design Principles](#design-principles-3)                                                                                             * [Areas for Cost Optimization](#areas-for-cost-optimization)                                                                           * [Best Practices](#best-practices-3)                                                                                                   * [Key AWS Services](#key-aws-services)                                                                                        
-   * [Additional Exam Tips](#additional-exam-tips)                                                                                      
+   * [Well Architected Framework](#well-architected-framework) 
+      * [Design Principles](#design-principles)                                                                                       
+      * [Security Areas](#security-areas)                                                                                             
+      * [Best Practices](#best-practices)                                                                                             
+      * [Design Principles](#design-principles-1)                                                                                    
+      * [Areas of Reliability](#areas-of-reliability)                                                                              
+      * [Best Practices](#best-practices-1)       
+      * [Key AWS Resources](#key-aws-resources)
+      * [Design Principles](#design-principles-2)
+      * [Areas of Performance Efficiency](#areas-of-performance-efficiency)                                                          
+      * [Best Practices](#best-practices-2)
+      * [Key AWS Resources](#key-aws-resources-1)                                                                                    
+      * [Design Principles](#design-principles-3)                                                                                     \
+      * [Areas for Cost Optimization](#areas-for-cost-optimization)                                                                   
+      * [Best Practices](#best-practices-3)                                                                                           
+      * [Key AWS Services](#key-aws-services)                                                                                        
+   * [Additional Exam Tips](#additional-exam-tips)                                                                                     
       * [AWS Exam Tips](#aws-exam-tips)                                                                                                 
       * [Consolidated billing](#consolidated-billing)                                                                                   
       * [Cross Account Access.](#cross-account-access)                                                                                 
@@ -128,12 +145,12 @@ Table of Contents
       * [VPC Peering](#vpc-peering)                                                                                                     
       * [Direct Connect](#direct-connect)                                                                                               
       * [Active Directory Integration](#active-directory-integration)                                                                   
-      * [Workspaces.](#workspaces)                                                                                                      
-   * [AWS Free Tier Usage](#aws-free-tier-usage)                                                                                        
+      * [Workspaces.](#workspaces)                                                                                                     
+   * [AWS Free Tier Usage](#aws-free-tier-usage)                                                                                       
       * [Free Services Options –](#free-services-options-)                                                                             
       * [Hourly Usage in the Free Tier](#hourly-usage-in-the-free-tier)                                                                 
       * [Free Tier Eligible Amazon Machine Images](#free-tier-eligible-amazon-machine-images)                                           
-   * [FAQs of Services](#faqs-of-services)                                                                                              
+   * [FAQs of Services](#faqs-of-services)                                                                                             
       * [RDS](#rds)                                                                                                                     
       * [EC2](#ec2)                                                                                                                     
       * [S3](#s3)                                                                                                                       
