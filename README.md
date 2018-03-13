@@ -1049,6 +1049,8 @@ How will the users get the best experience?  – evaluated dynamically by R3.
 
 5. Geo-location – Choose where to route traffic based on geographic location of users.
 
+6. Traffic Flow - Visually create complex set of dns records based on all the options above.
+
 Different from Latency based as the routing is hardwired irrespective of latency.
 
 ## DNS Exam Tips
@@ -1163,7 +1165,7 @@ OLTP systems.
 
   - In case of failover, No need to change connection string.
 
-  - This can be used for DR purpose only. This option has to be selected at instance creation time. This option is not useful for improving performance / scaling.
+  - Can be used for DR purposes only. Does not improve performance / scaling.
 
 ### Read Replica Databases.
 
