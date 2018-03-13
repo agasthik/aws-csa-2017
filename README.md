@@ -1203,7 +1203,7 @@ OLTP systems.
 
   - Stored on SSDs
 
-  - Stored on 3 geographically distinct DCs (not AZs). Built in redundancy
+  - Built in redundancy, data is replicated across 3 Availability Zones.
 
   - Consistency
 
