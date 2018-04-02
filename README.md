@@ -1223,7 +1223,7 @@ Select type based on application needs
 
   - Use DynamoDB for Push button scaling. With RDS – to scale horizontally a new instance has to be created.
 
-  - DynamoDB is cheap for writes and expensive for reads.
+  - DynamoDB is cheap for reads and expensive for writes.
 
   - Observe workload characteristics and decide
 
