@@ -1311,7 +1311,7 @@ Exam Tips
 
 ### Scaling
 
-  - Outset 10 Gb Storage, auto increment of storage
+  - Outset 10 GB Storage, auto increment of storage up to 64 TB
 
   - No Push button scaling – unlike DynamoDB
 
@@ -2236,7 +2236,7 @@ Q&A which I got incorrect.
 
 1. What does an AWS Region consist of? - A distinct location within a geographic area designed to provide high availability to a specific geography.
 
-2. Which AWS service is effectively a NAS in the cloud, allowing you to connect it to multiple EC2 instances at once? - EBS. Note difference from EBS which is directly attached to an EC2 Instance. 
+2. Which AWS service is effectively a NAS in the cloud, allowing you to connect it to multiple EC2 instances at once? - EFS (Elastic File System). Note difference from EBS which is directly attached to an EC2 Instance. 
 
 3. You need a service that will aggregate your data from multiple data sources (S3, DynamoDB, RDS, etc.) and provide business intelligence based on this data. Which AWS service should you use? - Quick Sight
 
