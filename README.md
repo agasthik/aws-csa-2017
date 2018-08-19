@@ -206,7 +206,7 @@ The exam is approximately 60 questions in 80 minutes. Pass marks not advertised 
 
   - A Region is geographical area consisting of 2 or more availability zones.
 
-  - Availability zone is logical data center
+  - Availability zone is a data center that is geographically separated from other availability zones within a region to ensure resiliency during a data center outage.
 
   - Edge Locations are CDN End Points for CloudFront. Many more edge locations exist than regions.
 
