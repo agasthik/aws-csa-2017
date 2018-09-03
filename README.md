@@ -834,16 +834,28 @@ Magnetic Drives
   - Volume is just block data. You need to format it create specific file system e.g. ext4
 
   - Root Volume is one where OS is installed / booted. It is not encrypted by default on AWS AMIs
+  
+### EBS Volumes
+
+  - EBS volume can be changed on the fly(except for magnetic standard)
+  
+  - Best practice is to stop the EC2 instance and then change the volume
+  
+  - You can change volume types by taking a snapshot and then using the snapshot to create a new volume
+  
+  - If you change a volume on the fly you must wait for 6 hours before you make another change
+  
+  - You can scale EBS volume up only
 
 ### RAID, Volumes & Snapshots.
 
   - RAID 0 – Striped, No Redundancy , Good Performance – No Backup/Failover
 
-  - RAID 1 – mirrored, Redundancy
+  - RAID 1 – Mirrored, Redundancy
 
   - RAID 5 – Good for reads, bad for writes. AWS doesn’t recommend using RAID 5 on EBS
 
-  - RAID 10 – Raid 0 + Raid 1
+  - RAID 10 – Raid 0 + Raid 1 - Good Redundancy , Good Performance - Done for very high I/O
 
   - Use RAID Arrays when a single volume IOPs are not sufficient for your need. E.g. Database. Then you create RAID Array to meet IOPs requirements.
 
@@ -871,7 +883,7 @@ Magnetic Drives
 
   - You can reboot or terminate instance store backed EC2 VMs
 
-  - You can start , stop , reboot or terminate EBS backed EC2 VMs
+  - You can start, stop, reboot or terminate EBS backed EC2 VMs
 
   - EC2 instance on instance store is lost if host hypervisor fails. Not so with EBS backed instances.
 
@@ -881,7 +893,7 @@ Magnetic Drives
 
   - Instance store back volume is from template in S3. Hence slower to provision
 
-  - You will not lose data is you reboot for both.
+  - You will not lose data if you reboot for both.
 
   - With EBS, you can ask AWS not to delete the volume upon instance termination.
 
@@ -919,7 +931,13 @@ The following are examples of problems that can cause instance status checks to 
 
   - Incompatible kernel
 
+## Load Balancers
 
+  - The Classic Load Balancer that routes traffic based on either application or network level information, and the Application Load Balancer that routes traffic based on advanced application level information that includes the content of the request.
+
+  - The Classic Load Balancer is ideal for simple load balancing of traffic across multiple EC2 instances, while the Application Load Balancer is ideal for applications needing advanced routing capabilities, microservices, and container-based architectures
+  
+  - Instances monitored by load balancers are reported as InService/OutOfService
 
 ## CloudWatch
 
@@ -935,7 +953,7 @@ The following are examples of problems that can cause instance status checks to 
 
   - CloudWatch logs helps you monitor EC2 instance/application/system logs. Logs send data to CloudWatch
 
-  - Standard monitoring 5 mins. Detailed monitoring 1 minute.
+  - Standard monitoring 5 mins. Detailed monitoring 1 minute - out of free tier.
 
   - CloudWatch is for logging. CloudTrail is for auditing your calls.
 
