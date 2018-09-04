@@ -1006,6 +1006,22 @@ The following are examples of problems that can cause instance status checks to 
   - Logical grouping of instances within a single AZ
 
   - Instances can participate in low latency, 10 GBPs network.
+  
+## EFS(Elastic File System)
+
+  - You pay only for the storage you use and can scale upto petabytes 
+  
+  - Unlike EBS, a EFS can be accessed by multiple EC2s - Acts like a central repository
+  
+  - Supports the NFSv4 protocol
+  
+  - Can support thousands of concurrent NFS connections
+  
+  - Data is stored across multiple AZs withing a region
+  
+  - Block based storage and not object based storage
+  
+  - Has read after write consistency
 
 # Route 53
 
