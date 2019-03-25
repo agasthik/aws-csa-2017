@@ -562,7 +562,7 @@ Using Access Key ID and Secret Access Key – can be used only via accessing pro
 
   - Restrict viewer access for S3 and CDN using pre-Signed URLs or Signed cookies. E.g. You can view video only using that URL
 
-  - Using Web Application Firewalls to prevent SQL injection, CSS attacks
+  - Using Web Application Firewalls to prevent SQL injection, XSS attacks
 
   - For https access, you can either use default CloudFront certificate or own certificate can be imported via ACM.
 
@@ -1063,7 +1063,7 @@ e.g. [https://www.tcpiputils.com/dns-lookup/google.com/ALL](https://www.tcpiputi
 
 Most of the questions are scenario based.
 
-1. Simple - Default - when a single resource performs function for your domain - only one webserver serves content
+1. Simple - Default - When you have a single resource available or wish to use DNS round robin between available resources.
 
 2. Weighted – send x% of traffic to site A and remainder (100 – x) % of it to site B. Need not be two different regions. Can be even two different ELBs.  This split is over length of day not based on number of individual subsequent requests.
 
@@ -1082,6 +1082,8 @@ How will the users get the best experience?  – evaluated dynamically by R3.
 4. Failover – When you want to create an active /passive setup. DR site. R53 monitors health of site. If active fails then R53 routes traffic to passive site.   Here you designate a primary and secondary endpoint for your hosted zone record.
 
 5. Geo-location – Choose where to route traffic based on geographic location of users.
+
+6. Traffic Flow - Visually create complex set of dns records based on all the options above.
 
 Different from Latency based as the routing is hardwired irrespective of latency.
 
@@ -1197,7 +1199,7 @@ OLTP systems.
 
   - In case of failover, No need to change connection string.
 
-  - This can be used for DR purpose only. This option has to be selected at instance creation time. This option is not useful for improving performance / scaling.
+  - Can be used for DR purposes only. Does not improve performance / scaling.
 
 ### Read Replica Databases.
 
@@ -1235,7 +1237,7 @@ OLTP systems.
 
   - Stored on SSDs
 
-  - Stored on 3 geographically distinct DCs (not AZs). Built in redundancy
+  - Built in redundancy, data is replicated across 3 Availability Zones.
 
   - Consistency
 
